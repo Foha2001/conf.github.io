@@ -846,9 +846,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 .subfooter .copyright-text p {
   font-family: "Montserrat", sans-serif;
-}
+ }
 .subfooter .copyright-text p a {
   color: #ff6600;
+   text-align: center;
 }
 @media (max-width: 767px) {
   .subfooter .copyright-text {
