@@ -1193,9 +1193,9 @@
 			</div>
 			<div class="col-md-6 ml-auto align-self-center">
 				<!-- Subscription form -->
-				<form action="#" class="row">
+				<form name="submit-to-google-sheet" action="#" class="row">
 					<div class="col-lg-8 col-md-12">
-						<input type="email" class="form-control main white mb-lg-0" placeholder="Email">
+						<input type="email" name= "mail" class="form-control main white mb-lg-0" placeholder="Email">
 					</div>
 					<div class="col-lg-4 col-md-12">
 						<div class="subscribe-button">
@@ -1203,6 +1203,7 @@
 						</div>
 					</div>
 				</form>
+				<span id="msg"></span>
 			</div>
 		</div>
 	</div>
@@ -1291,6 +1292,25 @@
   <script src="plugins/google-map/gmap.js"></script>
   <!-- Custom Script -->
   <script src="js/script.js"></script>
+  <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzyOBBcKcvTLOY7uZqx_HWVsYrNbjb-YP8YGsF0XyBAJOmc8OVx8GOHh13nI3nTEzDz/exec'
+	const form = document.forms['submit-to-google-sheet']
+	const msg = document.getElementById("msg")
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => {
+			msg.innerHTML = "Thank you for subscribing !"
+			setTimeout(function(){
+				msg.innerHTML = ""
+			},5000)
+			form.reset()
+		})
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
+
 </body>
 
 </html>
