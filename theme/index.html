@@ -1292,6 +1292,7 @@
   <script src="plugins/google-map/gmap.js"></script>
   <!-- Custom Script -->
   <script src="js/script.js"></script>
+  
   <script>
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbzyOBBcKcvTLOY7uZqx_HWVsYrNbjb-YP8YGsF0XyBAJOmc8OVx8GOHh13nI3nTEzDz/exec'
 	const form = document.forms['submit-to-google-sheet']
@@ -1304,7 +1305,7 @@
 			msg.innerHTML = "Thank you for subscribing !"
 			setTimeout(function(){
 				msg.innerHTML = ""
-			},5000)
+			},5000) 
 			form.reset()
 		})
 		.catch(error => console.error('Error!', error.message))
