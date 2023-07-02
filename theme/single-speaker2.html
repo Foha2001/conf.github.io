@@ -120,7 +120,7 @@
 			<div class="row">
 				<div class="col-lg-5 col-md-6 align-self-md-center">
 					<div class="image-block">
-						<img src="images/speakers/speaker-two.jpg" class="img-fluid" alt="speaker">
+						<img src="images/speakers/single-speaker.jpg" class="img-fluid" alt="speaker">
 					</div>
 				</div>
 				<div class="col-lg-7 col-md-6 align-self-center">
@@ -132,7 +132,8 @@
 							<p>Professor</p>
 						</div>
 						<div class="details">
-							<p>Ahmed Hannachi is a Professor of Chemical-Process Engineering at the University of Gabès. He has published 77 research papers and has been cited 608 times.
+							<p>Pr Ahmed Hannachi is a professor (full) at the University of Gabès and École Nationale d’Ingénieurs de Gabès (ENIG). He has an engineering degree, PhD and HDR in Chem. Eng. 
+								His research interests include reactors and microsystems, activated carbon, adsorption, gas storage on porous materials, ozone generation and applications in water treatment.
 							<br>
 							</p>
 							<p>
@@ -164,71 +165,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-2">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="personal-info">
-						<h5>Personal Information</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi explicabo suscipit deleniti voluptatum quos nostrum iure doloremque cupiditate voluptatem a enim eaque quod perspiciatis repudiandae, mollitia adipisci ea, quidem eveniet consequatur veniam error. Adipisci, suscipit corporis repellat, soluta vitae deserunt perspiciatis labore reprehenderit sapiente provident vel maxime.</p>
-						<ul class="m-0 p-0">
-							<li>Morbi fermentum felis nec</li>
-							<li>Fermentum felis nec gravida tempus.</li>
-							<li>Morbi fermentum felis nec</li>
-							<li>Fermentum felis nec gravida tempus.</li>
-							<li>Morbi fermentum felis nec</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="skills">
-						<h5>Personal Skills</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis repellat inventore at praesentium perspiciatis labore reprehenderit sapiente provident vel maxime.</p>
-						<div class="skill-bars">
-							<!-- SkillBar -->
-							<div class="skill-bar">
-								<!-- Title -->
-								<p>Wordpress</p>
-								<!-- Progress Bar -->
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" style="width: 90%;"><span>90%</span></div>
-								</div>
-							</div>
-							<!-- SkillBar -->
-							<div class="skill-bar">
-								<!-- Title -->
-								<p>PHP</p>
-								<!-- Progress Bar -->
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" style="width: 75%;">
-								  	<span>75%</span>
-								  </div>
-								</div>
-							</div>
-							<!-- SkillBar -->
-							<div class="skill-bar">
-								<!-- Title -->
-								<p>Javascript</p>
-								<!-- Progress Bar -->
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" style="width: 60%;">
-								  	<span>60%</span>
-								  </div>
-								</div>
-							</div>
-							<!-- SkillBar -->
-							<div class="skill-bar">
-								<!-- Title -->
-								<p>HTML</p>
-								<!-- Progress Bar -->
-								<div class="progress">
-								  <div class="progress-bar" role="progressbar" style="width: 80%;">
-								  	<span>80%</span>
-								  </div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+		
 			</div>
 		</div>
 	</div>
@@ -250,9 +187,9 @@
 			</div>
 			<div class="col-md-6 ml-auto align-self-center">
 				<!-- Subscription form -->
-				<form action="#" class="row">
+				<form name="submit-to-google-sheet" action="#" class="row">
 					<div class="col-lg-8 col-md-12">
-						<input type="email" class="form-control main white mb-lg-0" placeholder="Email">
+						<input type="email" name= "mail" class="form-control main white mb-lg-0" placeholder="Email">
 					</div>
 					<div class="col-lg-4 col-md-12">
 						<div class="subscribe-button">
@@ -260,6 +197,7 @@
 						</div>
 					</div>
 				</form>
+				<span id="msg"></span>
 			</div>
 		</div>
 	</div>
@@ -272,12 +210,12 @@
 =================================-->
 <section class="map">
 	<!-- Google Map -->
-	<div id="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/icon/marker.png" data-marker-name="Eventre"></div>
+	<div id="map" data-latitude="33.872214" data-longitude="10.109782" data-marker="images/icon/marker.png" data-marker-name="Eventre"></div>
 	<div class="address-block">
-		<h4>Docklands Convention</h4>
+		<h4>Gabès city</h4>
 		<ul class="address-list p-0 m-0">
-			<li><i class="fa fa-home"></i><span>Street Address, Location, <br>City, Country.</span></li>
-			<li><i class="fa fa-phone"></i><span>[00] 000 000 000</span></li>
+			<li><i class="fa fa-home"></i><span>Street Address, Location, <br>Gabès, Tunisia.</span></li>
+			<li><i class="fa fa-phone"></i><span>[+216] 99136573</span></li>
 		</ul>
 		<a href="#" class="btn btn-white-md">Get Direction</a>
 	</div>
@@ -294,23 +232,17 @@
       <div class="col-md-12">
         <div class="block text-center">
           <div class="footer-logo">
-            <img src="images/footer-logo.png" alt="logo" class="img-fluid">
+            <img src="images/footer-logo2.webp" alt="logo" class="img-fluid">
           </div>
           <ul class="social-links-footer list-inline">
             <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100078659363086" target="_blank"><i class="fa fa-facebook"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-twitter"></i></a>
+              <a href="https://twitter.com/HamoudaFoued" target="_blank"><i class="fa fa-twitter"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-rss"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://themefisher.com/"><i class="fa fa-vimeo"></i></a>
+              <a href="https://www.instagram.com/foha2001/" target="_blank"><i class="fa fa-instagram"></i></a>
             </li>
           </ul>
         </div>
@@ -325,7 +257,7 @@
     <div class="row">
       <div class="col-md-6 align-self-center">
         <div class="copyright-text">
-          <p><a href="index.html">Eventre</a> &copy; 2021, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></p>
+          <p><a href="index.html">GABES</a> &copy; 2023, Designed &amp; Developed by <a href="https://fouedhamouda.netlify.app/" target="_blank">Foued Hamouda</a></p>
         </div>
       </div>
       <div class="col-md-6">
@@ -354,6 +286,26 @@
   <script src="plugins/google-map/gmap.js"></script>
   <!-- Custom Script -->
   <script src="js/script.js"></script>
+  
+  <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzyOBBcKcvTLOY7uZqx_HWVsYrNbjb-YP8YGsF0XyBAJOmc8OVx8GOHh13nI3nTEzDz/exec'
+	const form = document.forms['submit-to-google-sheet']
+	const msg = document.getElementById("msg")
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => {
+			msg.innerHTML = "Thank you for subscribing !"
+			setTimeout(function(){
+				msg.innerHTML = ""
+			},5000) 
+			form.reset()
+		})
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
+
 </body>
 
 </html>
