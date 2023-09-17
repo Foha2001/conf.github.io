@@ -214,7 +214,7 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/background/giphy1.webp) no-repeat;
+  background: url(../images/background/plante.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -988,10 +988,11 @@ select.form-control:not([size]):not([multiple]) {
 }
 .banner .block h1 {
   text-transform: uppercase;
-  font-size: 5.5rem;
-  color: #ff6600;
-  font-weight: 500;
+  font-size: 4.3rem;
+  color: #1e1184;
+  font-weight: 420;
   margin-bottom: 5px;
+  margin-top: 2px;
   text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 767px) {
